@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="user" method="upgrade">
+    <name>PLG_USER_GAMIFICATION</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.en.html</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.0</version>
+    <creationDate>31 August, 2015</creationDate>
+    <description><![CDATA[
+    <p>User - Gamification is an extension that gives units (points) to users after registration.</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/credits-a-point-systems/gamification-platform" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+    
+    <files>
+        <filename plugin="gamification">gamification.php</filename>
+        <folder>language</folder>
+    </files>
+    
+    <help url="PLG_USER_GAMIFICATION_HELP_URL" />
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_gamification/models/fields">
+                <field name="points_give" type="radio" default="0" label="PLG_USER_GAMIFICATION_GIVE_POINTS" description="PLG_USER_GAMIFICATION_GIVE_POINTS_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="points_types" type="gfypointstypes" label="PLG_USER_GAMIFICATION_TYPES" description="PLG_USER_GAMIFICATION_TYPES_DESC" />
+            </fieldset>
+
+            <fieldset name="integration" label="PLG_USER_GAMIFICATION_INTEGRATION">
+                <field name="store_activity" type="radio" default="0" label="PLG_USER_GAMIFICATION_STORE_ACTIVITY" description="PLG_USER_GAMIFICATION_STORE_ACTIVITY_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="send_notification" type="radio" default="0" label="PLG_USER_GAMIFICATION_SEND_NOTIFICATION" description="PLG_USER_GAMIFICATION_SEND_NOTIFICATION_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+
+        </fields>
+    </config>
+    
+</extension>
