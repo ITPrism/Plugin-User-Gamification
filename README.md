@@ -1,6 +1,6 @@
 User - Gamification
 ==========================
-( Version 2.0 )
+( Version 2.1 )
 - - -
 
 User - Gamification is an extension that gives units (points) to users after registration.
@@ -10,3 +10,6 @@ You can [download User - Gamification] (http://itprism.com/free-joomla-extension
 
 Changelog
 ---------
+
+v2.1
+* Reworked to meet changes in v2.1 of the gamification platform.
